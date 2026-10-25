@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply overflow-hidden bg-sky-300 antialiased select-none touch-none overscroll-none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+  }
+
+  canvas {
+    @apply block touch-none;
+  }
+}
